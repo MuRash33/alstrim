@@ -1,10 +1,306 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+{% extends "siteapp/header.html" %}
+{% block content %}
+{% load static %}
+
+
+    <div class="wrapper" onclick="javascript:menuCloser()">
+        <main>
+            <section id="banner" class="banner main">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-md-12 col-lg-6">
+                            <div class="cont-text">
+                                <header>
+                                    <h1>
+                                       Каталог оборудования для климатических систем
+                                    </h1>
+                                </header>
+                                <content>
+                                    <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque magnam ratione magni voluptatem dolor cum in sunt, ex dicta voluptatum neque similique repellat! Illum assumenda hic veniam, nulla sint! Veniam.
+                                    </p>
+                                </content>
+                                <ul class="actions">
+                                    <li>
+                                        <a href="#" class="btn white">Оформить заявку</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <section class="bg-prod">
+                    <div class="cont-dop-slide slide">
+                        <div class="cbp-item" style="background: url({% static "siteapp/images/main-banner3.jpg" %}); background-size: cover; background-position: center;">
+                            <div class="container">
+                                <div class="row justify-content-end">
+                                    <div class="col-12 col-md-12 col-lg-3">
+                                        <div class="dop-content">
+                                            <h4>Новое поступление медной трубы</h4>
+                                            <a href="#" class="btn white-arrow-right">Подробнее</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cbp-item" style="background: url({% static "siteapp/images/main-banner4.jpg" %}); background-size: cover; background-position: center;">
+                            <div class="container">
+                                <div class="row justify-content-end">
+                                    <div class="col-12 col-md-12 col-lg-3">
+                                        <div class="dop-content">
+                                            <h4>Расширенный ассортимент кондиционеров</h4>
+                                            <a href="#" class="btn white-arrow-right">Подробнее</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+            <section id="catalog" class="content">
+                <div class="container">
+                    <header class="head">
+                        <h2>Каталог</h2> <a href="#" class="btn blue-arrow-right">Оформить заявку</a>
+                    </header>
+                    <div class="row">
+                        <div class="col-12 col-md-12 col-lg-3 order-2 order-sm-2 order-md-2 order-lg-1">
+                            <aside>
+                                <div id="sidebar">
+                                    <div class="dop-info">
+                                        <h5>
+                                            Дополнительно
+                                        </h5>
+                                        <ul class="dop-url">
+                                            <li>
+                                                <a href="#"><i class="fas fa-caret-right"></i> Доставка</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><i class="fas fa-caret-right"></i> Оплата</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><i class="fas fa-caret-right"></i> Оформить заявку</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><i class="fas fa-caret-right"></i> Образец договора</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><i class="fas fa-caret-right"></i> Реквизиты</a>
+                                            </li>
+                                        </ul>
+                                        <div class="plus-decor"></div>
+                                    </div>
+                                    <div class="dop-info-contacts">
+                                        <ul class="contacts">
+                                            <li>
+                                                <p><i class="fas fa-map-marker"></i> 603127, г. Нижний Новгород
+                                                ул. Улица,д.1, оф. 453</p>
+                                            </li>
+                                            <li>
+                                                <p><i class="fas fa-phone"></i> +7 (831) 123 45 67</p>
+                                            </li>
+                                            <li>
+                                                <p><i class="fas fa-envelope-open"></i> info@website.ru</p>
+                                            </li>
+                                        </ul>
+                                        <ul class="actions">
+                                            <li>
+                                                <a href="#" class="btn blue">Напишите нам</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </aside>
+                        </div>
+                        <div class="col-12 col-md-12 col-lg-9 order-1 order-sm-1 order-md-1 order-lg-2">
+                            <div class="row">
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <div class="prod">
+                                        <div class="prod-cont">
+                                            <header>
+                                                <h3>
+                                                    Медные трубы и фитинги
+                                                </h3>
+                                            </header>
+                                            <ul class="prod-list">
+                                                <li><i class="fas fa-check"></i> Halcor</li>
+                                                <li><i class="fas fa-check"></i> Maijapec</li>
+                                                <li><i class="fas fa-check"></i> Hailang</li>
+                                            </ul>
+                                            <ul class="actions">
+                                                <li>
+                                                    <a href="/catalog-group.html" class="btn white-arrow-right">Перейти</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="prod-img">
+                                            <img src={% static "siteapp/images/prod/prod-test.jpg" %} alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <div class="prod">
+                                        <div class="prod-cont">
+                                            <header>
+                                                <h3>
+                                                    Медные трубы и фитинги
+                                                </h3>
+                                            </header>
+                                            <ul class="prod-list">
+                                                <li><i class="fas fa-check"></i> Halcor</li>
+                                                <li><i class="fas fa-check"></i> Maijapec</li>
+                                                <li><i class="fas fa-check"></i> Hailang</li>
+                                            </ul>
+                                            <ul class="actions">
+                                                <li>
+                                                    <a href="/catalog-group.html" class="btn white-arrow-right">Перейти</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="prod-img">
+                                            <img src={% static "siteapp/images/prod/prod-test.jpg" %} alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <div class="prod">
+                                        <div class="prod-cont">
+                                            <header>
+                                                <h3>
+                                                    Медные трубы и фитинги
+                                                </h3>
+                                            </header>
+                                            <ul class="prod-list">
+                                                <li><i class="fas fa-check"></i> Halcor</li>
+                                                <li><i class="fas fa-check"></i> Maijapec</li>
+                                                <li><i class="fas fa-check"></i> Hailang</li>
+                                            </ul>
+                                            <ul class="actions">
+                                                <li>
+                                                    <a href="/catalog-group.html" class="btn white-arrow-right">Перейти</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="prod-img">
+                                            <img src={% static "siteapp/images/prod/prod-test.jpg" %} alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <div class="prod">
+                                        <div class="prod-cont">
+                                            <header>
+                                                <h3>
+                                                    Медные трубы и фитинги
+                                                </h3>
+                                            </header>
+                                            <ul class="prod-list">
+                                                <li><i class="fas fa-check"></i> Halcor</li>
+                                                <li><i class="fas fa-check"></i> Maijapec</li>
+                                                <li><i class="fas fa-check"></i> Hailang</li>
+                                            </ul>
+                                            <ul class="actions">
+                                                <li>
+                                                    <a href="/catalog-group.html" class="btn white-arrow-right">Перейти</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="prod-img">
+                                            <img src={% static "siteapp/images/prod/prod-test.jpg" %} alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <div class="prod">
+                                        <div class="prod-cont">
+                                            <header>
+                                                <h3>
+                                                    Медные трубы и фитинги
+                                                </h3>
+                                            </header>
+                                            <ul class="prod-list">
+                                                <li><i class="fas fa-check"></i> Halcor</li>
+                                                <li><i class="fas fa-check"></i> Maijapec</li>
+                                                <li><i class="fas fa-check"></i> Hailang</li>
+                                            </ul>
+                                            <ul class="actions">
+                                                <li>
+                                                    <a href="/catalog-group.html" class="btn white-arrow-right">Перейти</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="prod-img">
+                                            <img src={% static "siteapp/images/prod/prod-test.jpg" %} alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <div class="prod">
+                                        <div class="prod-cont">
+                                            <header>
+                                                <h3>
+                                                    Медные трубы и фитинги
+                                                </h3>
+                                            </header>
+                                            <ul class="prod-list">
+                                                <li><i class="fas fa-check"></i> Halcor</li>
+                                                <li><i class="fas fa-check"></i> Maijapec</li>
+                                                <li><i class="fas fa-check"></i> Hailang</li>
+                                            </ul>
+                                            <ul class="actions">
+                                                <li>
+                                                    <a href="/catalog-group.html" class="btn white-arrow-right">Перейти</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="prod-img">
+                                            <img src={% static "siteapp/images/prod/prod-test.jpg" %} alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="decor-grid">
+                    <div class="decor-dots"></div>
+                    <div class="decor-dots"></div>
+                </div>
+            </section>
+
+            {% include "siteapp/includes/sendprice.html" %}
+
+            <section id="pro-text" class="content catalog">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-md-12 col-lg-6">
+                            <header class="head">
+                                <h2>Каталог оборудования
+                                для климатических систем</h2>
+                            </header>
+                            <div class="cont-text">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi architecto, minima veritatis repellendus, eveniet tenetur voluptates nobis ex nam doloremque, assumenda reprehenderit dolor! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi architecto, minima veritatis repellendus, eveniet tenetur voluptates nobis ex nam doloremque, assumenda reprehenderit dolor!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi architecto, minima veritatis repellendus, eveniet tenetur voluptates nobis ex nam doloremque, assumenda reprehenderit dolor! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi architecto, minima veritatis repellendus, eveniet tenetur voluptates nobis ex nam doloremque, assumenda reprehenderit dolor!
+                                </p>
+                                <ul class="actions">
+                                    <li>
+                                        <a href="#" class="btn blue">Отправить заявку</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-12 col-lg-6">
+                            <div class="cont-img">
+                                <img src={% static "siteapp/images/catalog-img-main.jpg" %} alt="" class="cont-img-large">
+                                <img src={% static "siteapp/images/catalog-img-slave.jpg" %} alt="" class="cont-img-small">
+                                <div class="decor-dots"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+
+{% endblock %}

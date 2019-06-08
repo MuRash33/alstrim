@@ -16,3 +16,5 @@ def gosts(request):
 
 def contacts(request):
     return render(request, "siteapp/contacts.html")
+def catalog(request):
+    return render(request, "siteapp/catalog.html")
