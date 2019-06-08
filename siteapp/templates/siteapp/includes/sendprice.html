@@ -1,0 +1,38 @@
+{% block content %}
+{% load static %}
+
+            <section id="give-price" class="banner">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-md-12 col-lg-6">
+                            <div class="cont-text">
+                                <h4>Выслать прайс-лист</h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam et necessitatibus vel nisi quasi quae illo impedit, aut repellendus adipisci blanditiis enim quo reprehenderit suscipit sint laborum sequi, porro officiis.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-12 col-lg-6">
+                            <div class="cont-text" id="form-from">
+                                <form id="give-price-form" action="">
+                                    <input type="email" id="email" placeholder="Введите Ваш email...">
+                                    <input type="submit">
+                                </form>
+                                <script type="text/javascript" src={% static "/siteapp/assets/js/mail.js"%}></script>
+                                <script>
+                                    document.getElementById('give-price-form').addEventListener('submit', function(evt){
+                                    var http = new XMLHttpRequest(), f = this;
+                                    http.open("POST", {% static "/siteapp/assets/mail/website.php"%}, true);
+                                    http.send(new FormData(f));
+                                    }, false);
+                                </script>
+                                <p class="info">
+                                    Введите Ваш email и нажмите <b>отправить</b><br>для получения актуального прайс - листа
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+{% endblock %}

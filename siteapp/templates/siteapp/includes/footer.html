@@ -1,0 +1,103 @@
+{% block content %}
+{% load static %}
+
+<footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-12 col-lg-4">
+                    <div class="foot-contacts">
+                        <h5>Контакты</h5>
+                        <div class="foot-item">
+                            <p><b><i class="fas fa-map-marker"></i> Адрес</b></p>
+                            <p>603127, г. Нижний Новгород
+                            ул. Улица,д.1, оф. 453</p>
+                        </div>
+                        <div class="foot-item">
+                            <p><b><i class="fas fa-phone"></i> Телефон</b></p>
+                            <p>+7 (831) 123 45 67 (Секретарь)<br>
+                            +7 (831) 123 45 67 (Отдел продаж)</p>
+                        </div>
+                        <div class="foot-item">
+                            <p><b><i class="fas fa-envelope-open"></i> Email</b></p>
+                            <p>info@website.ru (Секретарь)
+                            info@website.ru (Отдел продаж)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-4">
+                    <div class="foot-contacts">
+                        <h5>Режим работы</h5>
+                        <div class="foot-item">
+                            <p><b><i class="far fa-clock"></i> Понедельник - Пятница</b></p>
+                            <p>9:00 - 18:00</p>
+                        </div>
+                        <div class="foot-item">
+                            <p><b><i class="far fa-clock"></i> Суббота - Воскресенье</b></p>
+                            <p>Выходной</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-4">
+                    <div class="foot-contacts new-item"><!-- Вывод последних нововведений (статей, новостей, добавленых продуктов) -->
+                        <h5>Новое</h5>
+                        <a href="#" class="foot-item">
+                            <p><b><i class="fas fa-file-alt"></i> Статья</b></p>
+                            <p>Название статьи</p>
+                        </a>
+                        <a href="#" class="foot-item">
+                            <p><b><i class="fas fa-box"></i> Продукция</b></p>
+                            <p>Название продукции</p>
+                        </a>
+                        <a href="#" class="foot-item">
+                            <p><b><i class="fas fa-file-alt"></i> Статья</b></p>
+                            <p>Название статьи</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src={% static "/siteapp/assets/js/bootstrap.min.js"%}></script>
+    <script src={% static "/siteapp/assets/js/scroll.js"%}></script>
+        <script>
+            //Функция отображения меню+бг+стоп прокрутки
+            function menuToggle() {
+                $("#header").toggleClass('closer');
+                $("#active-menu").toggleClass('closer');
+                $(".menu-wrapper").toggleClass('closer');
+                $(".wrapper").toggleClass('burner');
+            }
+            function menuCloser() {
+                $("#header").removeClass('closer');
+                $("#active-menu").removeClass('closer');
+                $(".menu-wrapper").removeClass('closer');
+                $(".wrapper").removeClass('burner');
+            }
+        </script>
+        <script type="text/javascript">
+            $(function () {
+
+                $(window).scroll(function(event) {
+                    if($(this).scrollTop() > 450) {
+                    $("#header").fadeIn();
+                    $("#header").addClass('fixed');
+                }
+                    if($(this).scrollTop() > 50) {
+                    $("#header").fadeIn();
+                    $("#header").addClass('top-100');
+                }
+                else {
+                    $("#header").removeClass('fixed');
+                    $("#header").removeClass('top-100');
+                }
+                });
+
+            });
+        </script>
+    <!-- load css for cubeportfolio -->
+    <link rel="stylesheet" type="text/css" href={% static "/siteapp/assets/css/cubeportfolio.min.css"%}>
+
+    <!-- load cubeportfolio -->
+    <script type="text/javascript" src={% static "/siteapp/assets/js/jquery.cubeportfolio.min.js"%}></script>
+    <script type="text/javascript" src={% static "/siteapp/assets/js/slide.js"%}></script>
+{% endblock %}

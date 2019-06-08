@@ -1,0 +1,126 @@
+{% extends "siteapp/header.html" %}
+{% block content %}
+{% load static %}
+
+
+    <div class="wrapper" onclick="javascript:menuCloser()">
+        <main>
+            <section id="banner" class="banner main">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-md-12 col-lg-6">
+                            <div class="cont-text">
+                                <header>
+                                    <h1>
+                                       Контакты
+                                    </h1>
+                                </header>
+                                <content>
+                                    <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque magnam ratione magni voluptatem dolor cum in sunt, ex dicta voluptatum neque similique repellat! Illum assumenda hic veniam, nulla sint! Veniam.
+                                    </p>
+                                </content>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <section class="bg-prod contacts" style="background: url({% static "siteapp/images/banner-contacts.jpg" %}); background-size: cover; background-position: center;">
+                </section>
+            </section>
+            <section id="contacts" class="content">
+                <div class="container">
+                    <header class="head">
+                        <h2>Как с нами связаться</h2>
+                    </header>
+                    <div class="row">
+                        <div class="col-12 col-md-12 col-lg-9">
+                            <div id="google-map">
+                                <div id="google-container"></div>
+                            </div>
+                            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+                            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMJgSeDvQr61flxyJIItDdNeUYnF2uBlI"></script>
+                            <script src={% static "siteapp/assets/js/map.js"%}></script>
+                            <script src={% static "siteapp/assets/js/modernizr.js"%}></script>
+                        </div>
+                        <div class="col-12 col-md-12 col-lg-3">
+                            <aside>
+                                <div id="sidebar">
+                                    <div class="dop-info">
+                                        <div class="contacts-item">
+                                            <p><b><i class="fas fa-map-marker"></i> Адрес</b></p>
+                                            <p>603127, г. Нижний Новгород
+                                            ул. Улица,д.1, оф. 453</p>
+                                        </div>
+                                        <div class="contacts-item">
+                                            <p><b><i class="fas fa-phone"></i> Телефон</b></p>
+                                            <p>+7 (831) 123 45 67 (Секретарь)<br>
+                                            +7 (831) 123 45 67 (Отдел продаж)</p>
+                                        </div>
+                                        <div class="contacts-item">
+                                            <p><b><i class="fas fa-envelope-open"></i> Email</b></p>
+                                            <p>info@website.ru (Секретарь)<br>
+                                            info@website.ru (Отдел продаж)</p>
+                                        </div>
+                                        <div class="plus-decor"></div>
+                                    </div>
+                                    <div class="dop-info">
+                                        <div class="contacts-item">
+                                            <form action="">
+                                                <p><b><i class="fas fa-envelope-open"></i> Ваш Email</b></p>
+                                                <input type="email" placeholder="Введите Ваш email...">
+                                                <br>
+                                                <br>
+                                                <p><b><i class="fas fa-comment-dots"></i> Сообщение</b></p>
+                                                <textarea name="" id="" rows="3" placeholder="Введите Ваше сообщение..."></textarea>
+                                                <input type="submit">
+                                            </form>
+                                        </div>
+                                        <div class="mail-decor"></div>
+                                    </div>
+                                </div>
+                            </aside>
+                        </div>
+                    </div>
+                </div>
+                <div class="decor-grid">
+                    <div class="decor-dots"></div>
+                    <div class="decor-dots"></div>
+                    <div class="decor-dots"></div>
+                </div>
+            </section>
+
+            {% include "siteapp/includes/sendprice.html" %}
+
+            <section id="pro-text" class="content catalog">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-md-12 col-lg-6">
+                            <header class="head">
+                                <h2>Lorem ipsum dolor sit amet</h2>
+                            </header>
+                            <div class="cont-text">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi architecto, minima veritatis repellendus, eveniet tenetur voluptates nobis ex nam doloremque, assumenda reprehenderit dolor! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi architecto, minima veritatis repellendus, eveniet tenetur voluptates nobis ex nam doloremque, assumenda reprehenderit dolor!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi architecto, minima veritatis repellendus, eveniet tenetur voluptates nobis ex nam doloremque, assumenda reprehenderit dolor! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi architecto, minima veritatis repellendus, eveniet tenetur voluptates nobis ex nam doloremque, assumenda reprehenderit dolor!
+                                </p>
+                                <ul class="actions">
+                                    <li>
+                                        <a href="#" class="btn blue">Отправить заявку</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-12 col-lg-6">
+                            <div class="cont-img">
+                                <img src={% static "siteapp/images/catalog-img-main.jpg"%} alt="" class="cont-img-large">
+                                <img src={% static "siteapp/images/catalog-img-slave.jpg"%} alt="" class="cont-img-small">
+                                <div class="decor-dots"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+
+{% endblock %}

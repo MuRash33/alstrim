@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>Главная</title>
+    <meta name="description" content="описание страницы">
+    <meta property="og:locale" content="ru_RU"/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" content="title"/>
+    <meta property="og:description" content="description"/>
+    <meta property="og:image" content="image url"/>
+    <meta property="og:url" content="ссылка"/>
+    <meta property="og:site_name" content="Алстрим, климатическое оборудование"/>
+    <!-- Социальные тэги (Twitter) -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="ссылка">
+    <meta name="twitter:title" content="title">
+    <meta name="twitter:description" content="description">
+    <meta name="twitter:image" content="image url">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<link rel="stylesheet" href={% static "/siteapp/assets/css/style.css"%} />
+</head>
+<body>
+    <div onclick="javascript:menuToggle()" class="menu-wrapper">
+        <div id="active-menu">
+        </div>
+    </div>
+    <header id="header">
+        <div class="container">
+            <div class="logo-contacts">
+                <a href="/" class="logo-brend">
+                    <div class="logo-img">
+                        <img src={% static "/siteapp/images/logo.png" alt=""%}>
+                    </div>
+                    <div class="logo-text">
+                        <h2>
+                            Алстрим
+                        </h2>
+                        <h3>
+                            Нижний Новгород
+                        </h3>
+                    </div>
+                </a>
+                <span class="logo-contacts">
+                    <ul class="contacts">
+                        <li class="phone">
+                            <a href="#">
+                                <span class="fa-stack">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fas fa-phone fa-stack-1x fa-inverse"></i>
+                                </span>
+                                +7 831 234 56 78
+                            </a>
+                        </li>
+                        <li class="mail">
+                            <a href="#">
+                                <span class="fa-stack">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fas fa-envelope-open fa-stack-1x fa-inverse"></i>
+                                </span>
+                                info@alstrim.com
+                            </a>
+                        </li>
+                    </ul>
+                </span>
+            </div>
+        {% include "siteapp/includes/menu.html" %}
+        </div>
+    </header>
+{% block content %}
+
+{% endblock %}
+
+{% include "siteapp/includes/footer.html" %}
+</body>
+</html>
