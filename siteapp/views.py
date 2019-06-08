@@ -16,5 +16,15 @@ def gosts(request):
 
 def contacts(request):
     return render(request, "siteapp/contacts.html")
+
 def catalog(request):
     return render(request, "siteapp/catalog.html")
+
+def catalog_group(request):
+    return render(request, "siteapp/catalog-group.html")
+
+def prod_card(request):
+    return render(request, "siteapp/prod-card.html")
+
+def temp_mews_statii(request):
+    return render(request, "siteapp/temp-mews-statii.html")

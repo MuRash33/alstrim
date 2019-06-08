@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b4341ca9-973d-494f-b0ef-d87fb853587c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/siteapp/templates/siteapp/catalog-group.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/siteapp/templates/siteapp/prod-card.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/siteapp/templates/siteapp/temp-mews-statii.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/siteapp/templates/siteapp/catalog.html" beforeDir="false" afterPath="$PROJECT_DIR$/siteapp/templates/siteapp/catalog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/siteapp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/siteapp/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/siteapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/siteapp/views.py" afterDir="false" />
     </list>
@@ -14,14 +17,14 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/siteapp/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="54" selection-start-line="9" selection-start-column="54" selection-end-line="9" selection-end-column="54" />
+            <state relative-caret-position="204">
+              <caret line="12" column="24" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="24" />
               <folding>
-                <element signature="e#0#37#0" expanded="true" />
+                <element signature="e#0#28#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -30,8 +33,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/siteapp/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="50" lean-forward="true" selection-start-line="19" selection-start-column="50" selection-end-line="19" selection-end-column="50" />
+            <state relative-caret-position="442">
+              <caret line="26" column="50" selection-start-line="26" selection-start-column="50" selection-end-line="26" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/siteapp/templates/siteapp/temp-mews-statii.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
             </state>
           </provider>
         </entry>
@@ -39,7 +51,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/siteapp/templates/siteapp/contacts.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="-1677">
               <folding>
                 <element signature="n#style#0;n#section#0;n#section#0;n#main#0;n#div#0;n#!!top" expanded="true" />
               </folding>
@@ -47,14 +59,25 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/siteapp/templates/siteapp/catalog.html">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/siteapp/templates/siteapp/catalog-group.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4437">
-              <caret line="270" column="45" selection-start-line="270" selection-start-column="45" selection-end-line="270" selection-end-column="45" />
+            <state relative-caret-position="3604">
+              <caret line="212" column="121" selection-start-line="212" selection-start-column="121" selection-end-line="212" selection-end-column="121" />
               <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#section#0;n#section#0;n#main#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#section#0;n#section#0;n#main#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#section#0;n#section#0;n#main#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/siteapp/templates/siteapp/prod-card.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="363">
+              <caret line="258" column="91" selection-start-line="258" selection-start-column="91" selection-end-line="258" selection-end-column="91" />
+              <folding>
+                <element signature="n#style#0;n#section#0;n#section#0;n#main#0;n#div#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -100,9 +123,12 @@
         <option value="$PROJECT_DIR$/siteapp/templates/siteapp/news.html" />
         <option value="$PROJECT_DIR$/siteapp/templates/gosts.html" />
         <option value="$PROJECT_DIR$/siteapp/templates/siteapp/contacts.html" />
+        <option value="$PROJECT_DIR$/siteapp/templates/siteapp/catalog.html" />
+        <option value="$PROJECT_DIR$/siteapp/templates/siteapp/catalog-group.html" />
+        <option value="$PROJECT_DIR$/siteapp/templates/siteapp/prod-card.html" />
         <option value="$PROJECT_DIR$/siteapp/urls.py" />
         <option value="$PROJECT_DIR$/siteapp/views.py" />
-        <option value="$PROJECT_DIR$/siteapp/templates/siteapp/catalog.html" />
+        <option value="$PROJECT_DIR$/siteapp/templates/siteapp/temp-mews-statii.html" />
       </list>
     </option>
   </component>
@@ -199,14 +225,11 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24962178" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25340393" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Python Console" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -214,11 +237,15 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="R Packages" />
-      <window_info anchor="right" id="R Graphics" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="R Graphics" order="3" />
+      <window_info anchor="right" id="R Packages" order="4" />
     </layout>
   </component>
   <component name="UnknownFeatures">
@@ -314,9 +341,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/siteapp/templates/siteapp/catalog.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="530">
+          <caret line="270" column="45" selection-start-line="270" selection-start-column="45" selection-end-line="270" selection-end-column="45" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#section#0;n#section#0;n#main#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#section#0;n#section#0;n#main#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/siteapp/templates/siteapp/contacts.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="-1677">
+          <folding>
+            <element signature="n#style#0;n#section#0;n#section#0;n#main#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/siteapp/templates/siteapp/catalog-group.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3604">
+          <caret line="212" column="121" selection-start-line="212" selection-start-column="121" selection-end-line="212" selection-end-column="121" />
+          <folding>
+            <element signature="n#style#0;n#section#0;n#section#0;n#main#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/siteapp/templates/siteapp/prod-card.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="258" column="91" selection-start-line="258" selection-start-column="91" selection-end-line="258" selection-end-column="91" />
           <folding>
             <element signature="n#style#0;n#section#0;n#section#0;n#main#0;n#div#0;n#!!top" expanded="true" />
           </folding>
@@ -325,29 +383,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/siteapp/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="54" selection-start-line="9" selection-start-column="54" selection-end-line="9" selection-end-column="54" />
+        <state relative-caret-position="204">
+          <caret line="12" column="24" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="24" />
           <folding>
-            <element signature="e#0#37#0" expanded="true" />
+            <element signature="e#0#28#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/siteapp/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="50" lean-forward="true" selection-start-line="19" selection-start-column="50" selection-end-line="19" selection-end-column="50" />
+        <state relative-caret-position="442">
+          <caret line="26" column="50" selection-start-line="26" selection-start-column="50" selection-end-line="26" selection-end-column="50" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/siteapp/templates/siteapp/catalog.html">
+    <entry file="file://$PROJECT_DIR$/siteapp/templates/siteapp/temp-mews-statii.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4437">
-          <caret line="270" column="45" selection-start-line="270" selection-start-column="45" selection-end-line="270" selection-end-column="45" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#section#0;n#section#0;n#main#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#section#0;n#section#0;n#main#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="68">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
